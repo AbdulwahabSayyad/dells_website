@@ -11,12 +11,12 @@ const app = express()
 
 //set up the middleware and routes
 app.use(express.json());
-app.use(express.static('public'));
+app.use(express.static('.'));
 
 app.get("/", sendHomepage)
 function sendHomepage(req,res,next){
     res.status(200);
-    res.sendFile(path.join(__dirname, '/public/index.html'));
+    res.sendFile(path.join(__dirname, '/index.html'));
 }
 
 app.listen(port,()=>{
