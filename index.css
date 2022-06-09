@@ -377,6 +377,7 @@ ul {
 /* Responsive image gallery rules begin*/
 
 .image-gallery {
+  transition:ease-in;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
